@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://vmabelrq013y"]
+
+[node name="Control" type="Control" unique_id=14545307]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=647485210]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 1151.0
+offset_bottom = 647.0
+
+[node name="BoxContainer" type="BoxContainer" parent="PanelContainer" unique_id=1875125691]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+vertical = true
+
+[node name="Button" type="Button" parent="PanelContainer/BoxContainer" unique_id=433298538]
+layout_mode = 2
+theme_override_font_sizes/font_size = 289
+text = "room 1"
+
+[node name="PanelContainer2" type="PanelContainer" parent="." unique_id=1273122834]
+layout_mode = 0
+offset_left = -1152.0
+offset_top = 1.0
+offset_right = -1.0
+offset_bottom = 647.0
+
+[node name="BoxContainer" type="BoxContainer" parent="PanelContainer2" unique_id=1047484520]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+vertical = true
+
+[node name="Button" type="Button" parent="PanelContainer2/BoxContainer" unique_id=1118774513]
+layout_mode = 2
+theme_override_font_sizes/font_size = 289
+text = "room 4"
+
+[node name="PanelContainer3" type="PanelContainer" parent="." unique_id=1510805343]
+layout_mode = 0
+offset_left = 1153.0
+offset_right = 2308.0
+offset_bottom = 647.0
+
+[node name="BoxContainer" type="BoxContainer" parent="PanelContainer3" unique_id=105738854]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+vertical = true
+
+[node name="Button" type="Button" parent="PanelContainer3/BoxContainer" unique_id=363661806]
+layout_mode = 2
+theme_override_font_sizes/font_size = 289
+text = "room 2"
+
+[node name="PanelContainer4" type="PanelContainer" parent="." unique_id=2060039497]
+layout_mode = 0
+offset_left = 2310.0
+offset_top = 1.0
+offset_right = 3468.0
+offset_bottom = 647.0
+
+[node name="BoxContainer" type="BoxContainer" parent="PanelContainer4" unique_id=681693743]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+vertical = true
+
+[node name="Button" type="Button" parent="PanelContainer4/BoxContainer" unique_id=1998282153]
+layout_mode = 2
+theme_override_font_sizes/font_size = 289
+text = "room 3"
+
+[node name="PanelContainer5" type="PanelContainer" parent="." unique_id=2036614247]
+layout_mode = 0
+offset_left = 3470.0
+offset_top = 1.0
+offset_right = 4623.0
+offset_bottom = 647.0
+
+[node name="BoxContainer" type="BoxContainer" parent="PanelContainer5" unique_id=1013509273]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+vertical = true
+
+[node name="Button" type="Button" parent="PanelContainer5/BoxContainer" unique_id=208674746]
+layout_mode = 2
+theme_override_font_sizes/font_size = 289
+text = "room 4"
