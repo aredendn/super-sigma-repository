@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://0lqgtxqey8bw"]
+
+[ext_resource type="Script" uid="uid://cb4d8kdjxaann" path="res://scripts/main.gd" id="1_3m1lq"]
+
+[node name="Control" type="Control" unique_id=832328130]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3m1lq")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=2118314200]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 649.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=928844632]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Button" type="Button" parent="PanelContainer/VBoxContainer" unique_id=628930016]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "chop wood"
+
+[node name="Button2" type="Button" parent="PanelContainer/VBoxContainer" unique_id=135379428]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "barricade window"
+
+[node name="Label" type="Label" parent="." unique_id=573560248]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 72.0
+offset_right = 199.0
+offset_bottom = 130.0
+
+[node name="Label2" type="Label" parent="." unique_id=1028403696]
+layout_mode = 0
+offset_left = 976.0
+offset_top = 75.0
+offset_right = 1095.0
+offset_bottom = 124.0
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Button" to="." method="_make_product"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Button2" to="." method="_sell_product"]

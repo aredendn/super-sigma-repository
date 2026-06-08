@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://o4de8bk8jkr2"]
+
+[ext_resource type="Script" uid="uid://bpm18xldxhr0w" path="res://scripts/cabin.gd" id="1_hn66x"]
+
+[node name="Node2D" type="Node2D" unique_id=1991207648]
+script = ExtResource("1_hn66x")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=540618506]
+
+[node name="ColorRect" type="ColorRect" parent="Node2D" unique_id=890041629]
+offset_top = -166.0
+offset_right = 1136.0
+offset_bottom = 597.0
+color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Node2D" unique_id=1476594600]
+offset_left = -128.0
+offset_top = 594.0
+offset_right = 1281.0
+offset_bottom = 937.0
+color = Color(0.585062, 0.585062, 0.5850621, 1)
+
+[node name="Control" type="Control" parent="Node2D" unique_id=531935280]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="Node2D/Control" unique_id=1259277750]
+layout_mode = 0
+offset_left = 189.0
+offset_top = 117.0
+offset_right = 359.0
+offset_bottom = 321.0
+text = "window"
+
+[node name="Button2" type="Button" parent="Node2D/Control" unique_id=1394410381]
+layout_mode = 0
+offset_left = 771.0
+offset_top = 115.0
+offset_right = 941.0
+offset_bottom = 319.0
+text = "window"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1355299103]
+offset_top = -94.0
+offset_right = 1153.0
+offset_bottom = 73.0
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=805867331]
+offset_left = -99.0
+offset_top = -94.0
+offset_right = 100.0
+offset_bottom = 674.0
+
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=113884037]
+offset_left = 1054.0
+offset_top = -94.0
+offset_right = 1253.0
+offset_bottom = 669.0
+
+[connection signal="pressed" from="Node2D/Control/Button" to="." method="_go_to_window_1"]
