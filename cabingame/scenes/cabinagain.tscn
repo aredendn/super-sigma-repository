@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://47va4nb1ft57"]
+
+[ext_resource type="Script" uid="uid://bpm18xldxhr0w" path="res://scripts/cabin.gd" id="1_owx3j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_52nk0"]
+size = Vector2(953, 598)
+
+[node name="Node2D" type="Node2D" unique_id=1991207648]
+script = ExtResource("1_owx3j")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=540618506]
+
+[node name="ColorRect" type="ColorRect" parent="Node2D" unique_id=890041629]
+offset_left = -1536.0
+offset_top = -166.0
+offset_right = 2666.0
+offset_bottom = 597.0
+mouse_filter = 2
+color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Node2D" unique_id=1476594600]
+offset_left = -1540.0
+offset_top = 594.0
+offset_right = 2668.0
+offset_bottom = 937.0
+mouse_filter = 2
+color = Color(0.585062, 0.585062, 0.5850621, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Node2D" unique_id=1406434252]
+offset_left = 207.0
+offset_top = 180.0
+offset_right = 377.0
+offset_bottom = 386.0
+mouse_filter = 2
+
+[node name="ColorRect4" type="ColorRect" parent="Node2D" unique_id=1766610354]
+offset_left = 790.0
+offset_top = 175.0
+offset_right = 960.0
+offset_bottom = 381.0
+mouse_filter = 2
+
+[node name="Area2D" type="Area2D" parent="Node2D" unique_id=1744854029]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Area2D" unique_id=978655498]
+position = Vector2(578.5, 373)
+shape = SubResource("RectangleShape2D_52nk0")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1355299103]
+offset_top = -94.0
+offset_right = 1153.0
+offset_bottom = 73.0
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=805867331]
+offset_left = -99.0
+offset_top = -94.0
+offset_right = 100.0
+offset_bottom = 674.0
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=113884037]
+offset_left = 1054.0
+offset_top = -94.0
+offset_right = 1253.0
+offset_bottom = 669.0
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1251699464]
+position = Vector2(577, 384)
+zoom = Vector2(0.99, 0.99)
+
+[node name="ColorRect4" type="ColorRect" parent="." unique_id=1035752276]
+offset_left = 1253.0
+offset_top = -94.0
+offset_right = 1452.0
+offset_bottom = 669.0
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect5" type="ColorRect" parent="." unique_id=1181854969]
+offset_left = 1437.0
+offset_top = -94.0
+offset_right = 2590.0
+offset_bottom = 73.0
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect6" type="ColorRect" parent="." unique_id=990888698]
+offset_left = 2393.0
+offset_top = -94.0
+offset_right = 2592.0
+offset_bottom = 674.0
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[connection signal="input_event" from="Node2D/Area2D" to="." method="_click_area"]
